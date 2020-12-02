@@ -104,7 +104,7 @@ function ProductBookForm({ onSubmitted, product }) {
       redirect: "follow",
     };
 
-    fetch("${process.env.NEXT_PUBLIC_API_URL}/orders", requestOptions)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/orders`, requestOptions)
       .then((response) => response.text())
       .then((result) => {
         console.log("Форма отправлена");
