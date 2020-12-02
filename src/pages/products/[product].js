@@ -53,7 +53,9 @@ export default function ProductPage({ product, products }) {
                         <a className="card card_product-2">
                           <div className="card__media">
                             <img
-                              src={`${process.env.NEXT_PUBLIC_API_URL}${product?.featured_images.formats.thumbnail.url}`}
+                              src={`${process.env.NEXT_PUBLIC_IMAGE_URL ?? ""}${
+                                product?.featured_images.formats.thumbnail.url
+                              }`}
                               className="card__image"
                               alt=""
                             />

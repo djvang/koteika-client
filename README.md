@@ -6,6 +6,9 @@ First, create the `.env` file and add:
 
 ```bash
 NEXT_PUBLIC_API_URL=http://localhost:1337
+
+# for local
+NEXT_PUBLIC_IMAGE_URL=http://localhost:1337 
 ```
 
 Second, run the development server:

@@ -37,7 +37,9 @@ const Product = ({ product }) => {
                     <SwiperSlide key={product.id}>
                       <img
                         className="gallery__thumbnail"
-                        src={`${process.env.NEXT_PUBLIC_API_URL}${product.formats.thumbnail.url}`}
+                        src={`${process.env.NEXT_PUBLIC_IMAGE_URL ?? ""}${
+                          product.formats.thumbnail.url
+                        }`}
                         alt=""
                       />
                     </SwiperSlide>
@@ -57,7 +59,7 @@ const Product = ({ product }) => {
                   <SwiperSlide key={product.id}>
                     <img
                       className="gallery__image"
-                      src={`${process.env.NEXT_PUBLIC_API_URL}${
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL ?? ""}${
                         product.formats?.small?.url ??
                         product.formats?.thumbnail?.url
                       }`}

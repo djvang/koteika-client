@@ -18,7 +18,9 @@ const ProductCard = ({
       <a className="card card_product">
         <div className="card__media">
           <img
-            src={`${process.env.NEXT_PUBLIC_API_URL}${featured_images.formats.thumbnail.url}`}
+            src={`${process.env.NEXT_PUBLIC_IMAGE_URL ?? ""}${
+              featured_images.formats.thumbnail.url
+            }`}
             className="card__image"
             alt=""
           />
