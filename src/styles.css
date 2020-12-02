@@ -667,6 +667,10 @@ h6 {
 }
 
 /* hero */
+.hero_home {
+  margin-bottom: 70px;
+}
+
 
 .hero_home .hero__title {
   font-size: 44px;
@@ -718,6 +722,7 @@ h6 {
 @media (min-width: 768px) {
   .hero_home {
     min-height: 880px;
+    margin-bottom: 70px;
   }
 
   .hero_home .hero__title {
@@ -731,6 +736,7 @@ h6 {
 @media (min-width: 992px) {
   .hero_home {
     min-height: 504px;
+    margin-bottom: 140px;
   }
 }
 
